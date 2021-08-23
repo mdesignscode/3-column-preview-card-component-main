@@ -1,0 +1,163 @@
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$dark_cyan: hsl(179, 100%, 13%);
+$paragraph: hsla(0, 0%, 100%, 0.75);
+$bg_heading_btn: hsl(0, 0%, 95%);
+
+/* **************** Global element styling **************** */
+
+* {
+    /* ************* Master reset ************* */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+}
+
+body {
+    background-color: $bg_heading_btn;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+p {
+    color: $paragraph;
+}
+
+#sedans {
+    background-color: $orange;
+    color: $orange;
+    border-radius: 0.6em 0.6em 0 0;
+}
+
+#suvs {
+    background: $cyan;
+    color: $cyan;
+}
+
+#luxury {
+    background-color: $dark_cyan;
+    color: $dark_cyan;
+    border-radius: 0 0 0.6em 0.6em;
+}
+
+
+/* **************** Card styling **************** */
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    /* **************** Desktop design **************** */
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        padding: 4rem;
+
+        .description {
+            height: 26em;
+            width: 16.5em;
+            padding: 2.5rem;
+        }
+
+        img {
+            width: 3.2em;
+            height: 2em;
+        }
+
+        header {
+            font-size: 2em;
+            margin: 1rem 0;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        #sedans {
+            border-radius: 0.6em 0 0 0.6em;
+        }
+
+        #luxury {
+            border-radius: 0 0.6em 0.6em 0;
+        }
+
+        button {
+            width: 9.2em;
+            height: 3.1em;
+            margin-top: 4rem;
+            font-size: 0.75em;
+        }
+
+        button:active,
+        button:hover {
+            border: 2px $bg_heading_btn solid;
+            background-color: transparent;
+            color: $bg_heading_btn;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+
+/* **************** Description styling **************** */
+
+.description {
+    height: 30em;
+    width: 22em;
+    padding: 3.3rem 3rem;
+}
+
+/* **************** Header styling **************** */
+
+header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.6em;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    color: $bg_heading_btn;
+}
+
+
+/* **************** Button styling **************** */
+
+button {
+    width: 9.75em;
+    height: 3.15em;
+    border-radius: 3.3em;
+    padding: 0 1.2em;
+    background: $bg_heading_btn;
+    margin-top: 1.5rem;
+}
+
+
+
+.attribution {
+    display: flex;
+    justify-content: center;
+
+
+
+    a {
+        color: $orange;
+        margin-left: 0.5rem;
+    }
+}

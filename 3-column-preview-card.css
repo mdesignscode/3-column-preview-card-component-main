@@ -1,0 +1,135 @@
+/* **************** Global element styling **************** */
+* {
+  /* ************* Master reset ************* */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  font-family: inherit;
+  color: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#sedans {
+  background-color: #e38826;
+  color: #e38826;
+  border-radius: 0.6em 0.6em 0 0;
+}
+
+#suvs {
+  background: #006970;
+  color: #006970;
+}
+
+#luxury {
+  background-color: #004241;
+  color: #004241;
+  border-radius: 0 0 0.6em 0.6em;
+}
+
+/* **************** Card styling **************** */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0;
+  /* **************** Desktop design **************** */
+}
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+  }
+  .card .description {
+    height: 26em;
+    width: 16.5em;
+    padding: 2.5rem;
+  }
+  .card img {
+    width: 3.2em;
+    height: 2em;
+  }
+  .card header {
+    font-size: 2em;
+    margin: 1rem 0;
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .card #sedans {
+    border-radius: 0.6em 0 0 0.6em;
+  }
+  .card #luxury {
+    border-radius: 0 0.6em 0.6em 0;
+  }
+  .card button {
+    width: 9.2em;
+    height: 3.1em;
+    margin-top: 4rem;
+    font-size: 0.75em;
+  }
+  .card button:active,
+.card button:hover {
+    border: 2px #f2f2f2 solid;
+    background-color: transparent;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+}
+
+/* **************** Description styling **************** */
+.description {
+  height: 30em;
+  width: 22em;
+  padding: 3.3rem 3rem;
+}
+
+/* **************** Header styling **************** */
+header {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.6em;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+/* **************** Button styling **************** */
+button {
+  width: 9.75em;
+  height: 3.15em;
+  border-radius: 3.3em;
+  padding: 0 1.2em;
+  background: #f2f2f2;
+  margin-top: 1.5rem;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
+.attribution a {
+  color: #e38826;
+  margin-left: 0.5rem;
+}
+
+/*# sourceMappingURL=3-column-preview-card.css.map */
